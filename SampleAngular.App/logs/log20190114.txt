@@ -1,0 +1,344 @@
+2019-01-14 21:07:39.710 +08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-01-14 21:07:40.424 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:07:40.618 +08:00 [INF] Executed DbCommand (57ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (Size = -1)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Categories` (`Id`, `CreateTime`, `Name`)
+VALUES (@p0, @p1, @p2);
+2019-01-14 21:07:40.625 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@p3='?' (DbType = Int32), @p4='?' (DbType = DateTime), @p5='?' (Size = -1)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Categories` (`Id`, `CreateTime`, `Name`)
+VALUES (@p3, @p4, @p5);
+2019-01-14 21:07:40.632 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (Size = -1)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Categories` (`Id`, `CreateTime`, `Name`)
+VALUES (@p6, @p7, @p8);
+2019-01-14 21:07:40.866 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:07:40.921 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (Size = -1), @p3='?' (DbType = DateTime), @p4='?' (Size = -1), @p5='?' (DbType = Decimal), @p6='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Stocks` (`Id`, `CreateTime`, `Desc`, `LastModified`, `Name`, `Price`, `Rating`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2019-01-14 21:07:40.925 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@p7='?' (DbType = Int32), @p8='?' (DbType = DateTime), @p9='?' (Size = -1), @p10='?' (DbType = DateTime), @p11='?' (Size = -1), @p12='?' (DbType = Decimal), @p13='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Stocks` (`Id`, `CreateTime`, `Desc`, `LastModified`, `Name`, `Price`, `Rating`)
+VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13);
+2019-01-14 21:07:41.159 +08:00 [INF] Executed DbCommand (232ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `StockCategories` (`StockId`, `CategoryId`, `Id`)
+VALUES (@p0, @p1, @p2);
+2019-01-14 21:07:41.168 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `StockCategories` (`StockId`, `CategoryId`, `Id`)
+VALUES (@p3, @p4, @p5);
+2019-01-14 21:07:41.176 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `StockCategories` (`StockId`, `CategoryId`, `Id`)
+VALUES (@p6, @p7, @p8);
+2019-01-14 21:07:41.322 +08:00 [INF] User profile is available. Using 'C:\Users\NaOH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-14 21:07:41.495 +08:00 [INF] Starting @angular/cli on port 55083...
+2019-01-14 21:07:42.644 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-01-14 21:08:00.572 +08:00 [INF] > my-app@0.0.0 start E:\visual studio 2017\SampleAngular\SampleAngular.App\ClientApp
+> ng serve "--port" "55083"
+
+** Angular Live Development Server is listening on localhost:55083, open your browser on http://localhost:55083/ **
+
+2019-01-14 21:08:09.904 +08:00 [INF] i 锝dm锝?[39m: wait until bundle finished: /
+
+2019-01-14 21:08:15.851 +08:00 [INF] Date: 2019-01-14T13:08:15.824Z
+Hash: 8b324a1415adcc776a04
+Time: 14644ms
+chunk {main} main.js, main.js.map (main) 77.2 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 228 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.22 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 138 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 1.5 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.05 MB [initial] [rendered]
+i 锝dm锝?[39m: Compiled successfully.
+
+2019-01-14 21:08:15.879 +08:00 [INF] Request finished in 33241.3211ms 304 
+2019-01-14 21:08:16.048 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/runtime.js  
+2019-01-14 21:08:16.050 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/polyfills.js  
+2019-01-14 21:08:16.050 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/styles.js  
+2019-01-14 21:08:16.050 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/scripts.js  
+2019-01-14 21:08:16.050 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/vendor.js  
+2019-01-14 21:08:16.050 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/main.js  
+2019-01-14 21:08:16.238 +08:00 [INF] Request finished in 188.269ms 304 
+2019-01-14 21:08:17.636 +08:00 [INF] Request finished in 1585.6881ms 304 
+2019-01-14 21:08:17.636 +08:00 [INF] Request finished in 1586.2561ms 304 
+2019-01-14 21:08:17.637 +08:00 [INF] Request finished in 1586.502ms 304 
+2019-01-14 21:08:17.644 +08:00 [INF] Request finished in 1593.7403ms 304 
+2019-01-14 21:08:17.645 +08:00 [INF] Request finished in 1596.4238ms 304 
+2019-01-14 21:08:22.058 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/assets/img/user2-160x160.jpg  
+2019-01-14 21:08:22.062 +08:00 [INF] Request finished in 3.7808ms 304 
+2019-01-14 21:08:22.076 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/fontawesome-webfont.woff2?v=4.7.0  
+2019-01-14 21:08:22.080 +08:00 [INF] Request finished in 4.2568ms 304 
+2019-01-14 21:08:22.364 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/sockjs-node/info?t=1547471302350  
+2019-01-14 21:08:22.378 +08:00 [INF] Request finished in 14.0396ms 200 application/json; charset=UTF-8
+2019-01-14 21:08:22.440 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/sockjs-node/206/tlsf1lqq/websocket  
+2019-01-14 21:08:23.462 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/sockjs-node/206/ov4yxvld/xhr_streaming?t=1547471303457  0
+2019-01-14 21:08:23.472 +08:00 [INF] Request finished in 1032.241ms 0 
+2019-01-14 21:08:29.798 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/stock  
+2019-01-14 21:08:29.812 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/glyphicons-halflings-regular.woff2  
+2019-01-14 21:08:30.813 +08:00 [INF] Request finished in 1015.1212ms 404 text/html; charset=utf-8
+2019-01-14 21:08:30.818 +08:00 [INF] Request finished in 1006.5384ms 304 
+2019-01-14 21:27:00.529 +08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-01-14 21:27:01.182 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:27:01.255 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:27:01.416 +08:00 [ERR] Failed executing DbCommand (61ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (Size = -1), @p3='?' (DbType = DateTime), @p4='?' (Size = -1), @p5='?' (DbType = Decimal), @p6='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Stocks` (`Id`, `CreateTime`, `Desc`, `LastModified`, `Name`, `Price`, `Rating`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+MySql.Data.MySqlClient.MySqlException (0x80004005): Column 'LastModified' cannot be null
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+2019-01-14 21:27:01.489 +08:00 [ERR] An exception occurred in the database while saving changes for context type 'SampleAngular.Infrastructure.Database.MyContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Column 'LastModified' cannot be null
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Column 'LastModified' cannot be null
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(DbContext _, ValueTuple`2 parameters, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IReadOnlyList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2019-01-14 21:27:01.526 +08:00 [ERR] An error occurred while updating the entries. See the inner exception for details.
+2019-01-14 21:27:01.529 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:27:01.537 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:27:01.546 +08:00 [ERR] The instance of entity type 'Stock' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2019-01-14 21:27:01.549 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:27:01.557 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:27:01.560 +08:00 [ERR] The instance of entity type 'Stock' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2019-01-14 21:27:01.567 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:27:01.571 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:27:01.578 +08:00 [ERR] The instance of entity type 'Stock' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2019-01-14 21:27:01.582 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:27:01.590 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:27:01.594 +08:00 [ERR] The instance of entity type 'Stock' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2019-01-14 21:27:01.601 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:27:01.606 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:27:01.612 +08:00 [ERR] The instance of entity type 'Stock' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2019-01-14 21:27:01.616 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:27:01.624 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:27:01.629 +08:00 [ERR] The instance of entity type 'Stock' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2019-01-14 21:27:01.635 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:27:01.639 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:27:01.643 +08:00 [ERR] The instance of entity type 'Stock' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2019-01-14 21:27:01.650 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:27:01.654 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:27:01.661 +08:00 [ERR] The instance of entity type 'Stock' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2019-01-14 21:27:01.665 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:27:01.672 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:27:01.676 +08:00 [ERR] The instance of entity type 'Stock' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2019-01-14 21:27:01.684 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:27:01.688 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:27:01.717 +08:00 [INF] User profile is available. Using 'C:\Users\NaOH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-14 21:27:01.815 +08:00 [INF] Starting @angular/cli on port 55339...
+2019-01-14 21:27:02.802 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-01-14 21:27:10.935 +08:00 [INF] > my-app@0.0.0 start E:\visual studio 2017\SampleAngular\SampleAngular.App\ClientApp
+> ng serve "--port" "55339"
+
+** Angular Live Development Server is listening on localhost:55339, open your browser on http://localhost:55339/ **
+
+2019-01-14 21:29:55.999 +08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-01-14 21:29:56.669 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:29:56.740 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:29:56.857 +08:00 [INF] Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (Size = -1), @p3='?' (DbType = DateTime), @p4='?' (Size = -1), @p5='?' (DbType = Decimal), @p6='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Stocks` (`Id`, `CreateTime`, `Desc`, `LastModified`, `Name`, `Price`, `Rating`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2019-01-14 21:29:56.862 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@p7='?' (DbType = Int32), @p8='?' (DbType = DateTime), @p9='?' (Size = -1), @p10='?' (DbType = DateTime), @p11='?' (Size = -1), @p12='?' (DbType = Decimal), @p13='?' (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Stocks` (`Id`, `CreateTime`, `Desc`, `LastModified`, `Name`, `Price`, `Rating`)
+VALUES (@p7, @p8, @p9, @p10, @p11, @p12, @p13);
+2019-01-14 21:29:56.912 +08:00 [INF] Executed DbCommand (48ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `StockCategories` (`StockId`, `CategoryId`, `Id`)
+VALUES (@p0, @p1, @p2);
+2019-01-14 21:29:56.916 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `StockCategories` (`StockId`, `CategoryId`, `Id`)
+VALUES (@p3, @p4, @p5);
+2019-01-14 21:29:56.918 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[@p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `StockCategories` (`StockId`, `CategoryId`, `Id`)
+VALUES (@p6, @p7, @p8);
+2019-01-14 21:29:57.037 +08:00 [INF] User profile is available. Using 'C:\Users\NaOH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-14 21:29:57.140 +08:00 [INF] Starting @angular/cli on port 55385...
+2019-01-14 21:30:00.861 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-01-14 21:30:15.670 +08:00 [INF] > my-app@0.0.0 start E:\visual studio 2017\SampleAngular\SampleAngular.App\ClientApp
+> ng serve "--port" "55385"
+
+** Angular Live Development Server is listening on localhost:55385, open your browser on http://localhost:55385/ **
+
+2019-01-14 21:30:27.024 +08:00 [INF] i 锝dm锝?[39m: wait until bundle finished: /
+
+2019-01-14 21:30:31.403 +08:00 [INF] Date: 2019-01-14T13:30:31.331Z
+Hash: 8b324a1415adcc776a04
+Time: 15119ms
+chunk {main} main.js, main.js.map (main) 77.2 kB [initial] [rendered]
+chunk {polyfills} polyfills.js, polyfills.js.map (polyfills) 228 kB [initial] [rendered]
+chunk {runtime} runtime.js, runtime.js.map (runtime) 6.22 kB [entry] [rendered]
+chunk {scripts} scripts.js, scripts.js.map (scripts) 138 kB  [rendered]
+chunk {styles} styles.js, styles.js.map (styles) 1.5 MB [initial] [rendered]
+chunk {vendor} vendor.js, vendor.js.map (vendor) 4.05 MB [initial] [rendered]
+i 锝dm锝?[39m: Compiled successfully.
+
+2019-01-14 21:30:31.431 +08:00 [INF] Request finished in 30570.4093ms 304 
+2019-01-14 21:30:31.440 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/runtime.js  
+2019-01-14 21:30:31.446 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/polyfills.js  
+2019-01-14 21:30:31.446 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/styles.js  
+2019-01-14 21:30:31.448 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/vendor.js  
+2019-01-14 21:30:31.448 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/main.js  
+2019-01-14 21:30:31.448 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/scripts.js  
+2019-01-14 21:30:31.630 +08:00 [INF] Request finished in 183.8894ms 304 
+2019-01-14 21:30:32.993 +08:00 [INF] Request finished in 1545.4369ms 304 
+2019-01-14 21:30:32.995 +08:00 [INF] Request finished in 1546.5063ms 304 
+2019-01-14 21:30:32.996 +08:00 [INF] Request finished in 1555.7463ms 304 
+2019-01-14 21:30:33.000 +08:00 [INF] Request finished in 1553.7529ms 304 
+2019-01-14 21:30:33.008 +08:00 [INF] Request finished in 1559.7604ms 304 
+2019-01-14 21:30:33.842 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/assets/img/user2-160x160.jpg  
+2019-01-14 21:30:33.846 +08:00 [INF] Request finished in 3.6773ms 304 
+2019-01-14 21:30:33.846 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/fontawesome-webfont.woff2?v=4.7.0  
+2019-01-14 21:30:33.852 +08:00 [INF] Request finished in 5.8816ms 304 
+2019-01-14 21:30:33.981 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/sockjs-node/info?t=1547472633979  
+2019-01-14 21:30:33.995 +08:00 [INF] Request finished in 13.9145ms 200 application/json; charset=UTF-8
+2019-01-14 21:30:34.006 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/sockjs-node/883/1v2m2gek/websocket  
+2019-01-14 21:30:34.714 +08:00 [INF] Request finished in 708.4092ms 0 
+2019-01-14 21:30:34.720 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/sockjs-node/883/b0dgatvt/xhr_streaming?t=1547472634716  0
+2019-01-14 21:57:01.836 +08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-01-14 21:57:02.528 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 21:57:02.606 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 21:57:02.646 +08:00 [INF] User profile is available. Using 'C:\Users\NaOH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-14 21:57:03.540 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-01-14 21:57:05.806 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.Net.Http.HttpRequestException: Failed to proxy the request to http://localhost:4200/, because the request to the proxy target failed. Check that the proxy target server is running and accepting requests to http://localhost:4200/.
+
+The underlying exception message was 'No connection could be made because the target machine actively refused it'.Check the InnerException for more details. ---> System.Net.Http.HttpRequestException: No connection could be made because the target machine actively refused it ---> System.Net.Sockets.SocketException: No connection could be made because the target machine actively refused it
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.ConnectHelper.ConnectAsync(String host, Int32 port, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.CreateConnectionAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.WaitForCreatedConnectionAsync(ValueTask`1 creationTask)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncUnbuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.SpaServices.Extensions.Proxy.SpaProxy.PerformProxyRequest(HttpContext context, HttpClient httpClient, Task`1 baseUriTask, CancellationToken applicationStoppingToken, Boolean proxy404s)
+   at Microsoft.AspNetCore.Builder.SpaProxyingExtensions.<>c__DisplayClass2_0.<<UseProxyToSpaDevelopmentServer>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-01-14 21:57:05.947 +08:00 [INF] Request finished in 2408.0848ms 500 text/html; charset=utf-8
+2019-01-14 22:00:19.795 +08:00 [INF] Entity Framework Core 2.1.4-rtm-31024 initialized 'MyContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-01-14 22:00:20.463 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `c`.`Id`, `c`.`CreateTime`, `c`.`Name`
+FROM `Categories` AS `c`
+2019-01-14 22:00:20.534 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `s`.`Id`, `s`.`CreateTime`, `s`.`Desc`, `s`.`LastModified`, `s`.`Name`, `s`.`Price`, `s`.`Rating`
+FROM `Stocks` AS `s`
+2019-01-14 22:00:20.574 +08:00 [INF] User profile is available. Using 'C:\Users\NaOH\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-01-14 22:00:21.414 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/  
+2019-01-14 22:00:22.645 +08:00 [INF] Request finished in 1231.2632ms 200 text/html; charset=UTF-8
+2019-01-14 22:00:22.651 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/runtime.js  
+2019-01-14 22:00:22.651 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/polyfills.js  
+2019-01-14 22:00:22.656 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/styles.js  
+2019-01-14 22:00:22.656 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/scripts.js  
+2019-01-14 22:00:22.658 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/vendor.js  
+2019-01-14 22:00:22.659 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/main.js  
+2019-01-14 22:00:22.681 +08:00 [INF] Request finished in 29.4814ms 304 
+2019-01-14 22:00:23.692 +08:00 [INF] Request finished in 1036.4679ms 304 
+2019-01-14 22:00:23.710 +08:00 [INF] Request finished in 1052.0281ms 304 
+2019-01-14 22:00:23.712 +08:00 [INF] Request finished in 1060.8355ms 304 
+2019-01-14 22:00:23.713 +08:00 [INF] Request finished in 1057.6938ms 304 
+2019-01-14 22:00:23.714 +08:00 [INF] Request finished in 1055.666ms 304 
+2019-01-14 22:00:24.453 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/assets/img/user2-160x160.jpg  
+2019-01-14 22:00:24.457 +08:00 [INF] Request finished in 4.1163ms 304 
+2019-01-14 22:00:24.457 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/fontawesome-webfont.woff2?v=4.7.0  
+2019-01-14 22:00:24.463 +08:00 [INF] Request finished in 6.4476ms 304 
+2019-01-14 22:00:24.585 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/sockjs-node/info?t=1547474424583  
+2019-01-14 22:00:24.595 +08:00 [INF] Request finished in 9.8724ms 200 application/json; charset=UTF-8
+2019-01-14 22:00:24.601 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/sockjs-node/150/uagic3bs/websocket  
+2019-01-14 22:00:25.303 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:5001/sockjs-node/150/lqs03br2/xhr_streaming?t=1547474425300  0
+2019-01-14 22:00:25.311 +08:00 [INF] Request finished in 710.2155ms 0 
+2019-01-14 22:00:40.130 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/stock  
+2019-01-14 22:00:40.142 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/glyphicons-halflings-regular.woff2  
+2019-01-14 22:00:40.722 +08:00 [INF] Request finished in 591.9506ms 0 
+2019-01-14 22:00:41.151 +08:00 [INF] Request finished in 1008.9179ms 304 
+2019-01-14 22:00:41.188 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/api/stock  
+2019-01-14 22:00:41.195 +08:00 [INF] Request finished in 6.4713ms 404 text/html; charset=utf-8
+2019-01-14 22:01:14.386 +08:00 [INF] Request finished in 49083.0743ms 200 application/javascript; charset=UTF-8

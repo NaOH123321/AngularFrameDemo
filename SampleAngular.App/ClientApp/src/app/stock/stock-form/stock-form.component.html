@@ -1,0 +1,71 @@
+<div class="box box-info">
+    <div class="box-header with-border">
+        <h3 class="box-title">股票详情</h3>
+    </div>
+    <!-- /.box-header -->
+    <!-- form start -->
+    <form [formGroup]="formModel" class="form-horizontal">
+        <div class="box-body">
+            <div class="form-group" [class.has-error]="formModel.get('name').touched && (formModel.hasError('minlength',['name']) || formModel.hasError('required',['name']))">
+                <label for="name" class="col-sm-2 control-label">股票名称</label>
+
+                <div class="col-sm-6">
+                    <input formControlName="name" type="text" class="form-control" id="name" placeholder="股票名称">
+                </div>
+
+                <span class="help-block" [class.hidden]="formModel.get('name').untouched || !formModel.hasError('required',['name'])">
+                    股票名称是必填项
+                </span>
+                <span class="help-block" [class.hidden]="formModel.get('name').untouched || !formModel.hasError('minlength',['name'])">
+                    股票名称至少需要三个字
+                </span>
+            </div>
+            <div class="form-group" [class.has-error]="formModel.hasError('required',['price'])">
+                <label for="price" class="col-sm-2 control-label">股票价格</label>
+
+                <div class="col-sm-4">
+                    <input formControlName="price" type="number" class="form-control" id="price" placeholder="股票价格">
+                </div>
+                <span class="help-block" [class.hidden]="!formModel.hasError('required',['price'])">
+                    股票价格是必填项
+                </span>
+            </div>
+            <div class="form-group">
+                <label class="col-sm-2 control-label">股票评级</label>
+
+                <div class="col-sm-10">
+                    <app-stars [(rating)]="stock.rating" [readOnly]="false"></app-stars>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="desc" class="col-sm-2 control-label">股票描述</label>
+
+                <div class="col-sm-10">
+                    <textarea formControlName="desc" class="form-control" id="desc" placeholder="股票描述"></textarea>
+                </div>
+            </div>
+            <div class="form-group" [class.has-error]="formModel.get('categories').dirty && formModel.hasError('categorieslength',['categories'])">
+                <label class="col-sm-2 control-label">股票类型</label>
+
+                <div class="col-sm-10" formArrayName="categories">
+                    <div class="row">
+                        <div *ngFor="let category of categories;let i = index" class="checkbox col-sm-2">
+                            <label>
+                                <input [formControlName]="i" type="checkbox"> {{category}}
+                            </label>
+                        </div>
+                    </div>
+                    <span class="help-block" [class.hidden]="formModel.get('categories').pristine || !formModel.hasError('categorieslength',['categories'])">
+                        股票类型至少需要选择一个
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+            <button (click)="cancel()" type="submit" class="btn btn-default">取消</button>
+            <button (click)="save()" [disabled]="formModel.invalid" type="submit" class="btn btn-info pull-right">保存</button>
+        </div>
+        <!-- /.box-footer -->
+    </form>
+</div>

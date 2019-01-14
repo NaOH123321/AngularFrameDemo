@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190114131958_initial-test.cs" />
+    <Compile Remove="Migrations\20190114132912_initial-ms.cs" />
+    <Compile Remove="Migrations\20190114133610_initial-msss.cs" />
+    <Compile Remove="Migrations\20190114134130_initial-msss.cs" />
+    <Compile Remove="Migrations\20190114134428_initial-msss.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="8.1.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.2" />
+    <PackageReference Include="MySql.Data.EntityFrameworkCore.Design" Version="8.0.13" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.0.9.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SampleAngular.Core\SampleAngular.Core.csproj" />
+  </ItemGroup>
+
+</Project>
