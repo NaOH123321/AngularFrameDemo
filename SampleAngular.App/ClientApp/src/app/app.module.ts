@@ -16,31 +16,30 @@ import { StockFormComponent } from './stock/stock-form/stock-form.component';
 import { StockService } from './stock/stock.service';
 import { StockPipe } from './stock/stock.pipe';
 import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        HeaderComponent,
-        FooterComponent,
-        MenuComponent,
-        ContentComponent,
-        SidebarComponent,
-        StockManagerComponent,
-        StockFormComponent,
-        StarsComponent,
-        HomeComponent,
-        StockPipe
-    ],
-    imports: [
-        BrowserModule,
-        HttpModule,
-        AppRoutingModule,
-        FormsModule,
-        ReactiveFormsModule
-    ],
-    providers: [StockService],
-    bootstrap: [
-        AppComponent
-    ]
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    MenuComponent,
+    ContentComponent,
+    SidebarComponent,
+    StockManagerComponent,
+    StockFormComponent,
+    StarsComponent,
+    HomeComponent,
+    StockPipe
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  providers: [StockService],
+  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

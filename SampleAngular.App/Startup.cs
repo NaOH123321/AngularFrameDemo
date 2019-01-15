@@ -51,8 +51,7 @@ namespace SampleAngular.App
                 {
                     options.UseMySQL(Configuration.GetConnectionString("MySQLConnection"));
                 });
-
-            //services.AddScoped<ISampleRepository, SampleRepository>();
+            
             services.AddScoped<IRepository<Stock, StockParameters>, StockRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
