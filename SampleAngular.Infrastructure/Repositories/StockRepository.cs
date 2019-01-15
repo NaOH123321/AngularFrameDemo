@@ -66,6 +66,12 @@ namespace SampleAngular.Infrastructure.Repositories
 
         public void Update(Stock t)
         {
+            t.StockCategories.ForEach(x =>
+            {
+                x.Category = _myContext.Categories.First(c => c.Name == x.Category.Name);
+                x.Stock = t;
+            });
+
             _myContext.Entry(t).State = EntityState.Modified;
         }
     }

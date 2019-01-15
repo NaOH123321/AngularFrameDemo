@@ -31,7 +31,24 @@ namespace SampleAngular.App.Extensions
                         }
                     )
                 );
-            CreateMap<StockResource, Stock>();
+            CreateMap<StockResource, Stock>().ForMember(dest => dest.StockCategories,
+                opt => opt.ResolveUsing(src =>
+                    {
+                        var list = new List<StockCategory>();
+                        foreach (var categoryName in src.Categories)
+                        {
+                            list.Add(new StockCategory()
+                            {
+                                Category = new Category()
+                                {
+                                    Name = categoryName
+                                }
+                            });
+                        }
+                        return list;
+                    }
+                )
+            );
         }
     }
 }

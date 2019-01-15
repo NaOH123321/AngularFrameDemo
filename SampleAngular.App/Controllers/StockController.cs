@@ -87,19 +87,6 @@ namespace SampleAngular.App.Controllers
             stock.LastModified = DateTime.Now;
             _mapper.Map(stockResource, stock);
 
-            var list = new List<StockCategory>();
-            foreach (var categoryName in stockResource.Categories)
-            {
-                var category = _myContext.Categories.First(x => x.Name == categoryName);
-
-                list.Add(new StockCategory()
-                {
-                    Category = category,
-                    Stock = stock
-                });
-            }
-            stock.StockCategories = list;
-
             _repository.Update(stock);
 
             if (!await _unitOfWork.SaveAsync())
